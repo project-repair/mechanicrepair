@@ -12,11 +12,12 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="aboutme.html">About Us</a></li>
                 <li><a href="service.html">Service</a></li>
                 <li><a href="contact.html">contact</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="signup.php">Signup</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +27,7 @@
         <img class="mySlides" src="images/car1.jpg" style="width:100%">
         <img class="mySlides" src="images/car2.jpg" style="width:100%">
         <img class="mySlides" src="images/bike2.jpg" style="width:100%">
-      
+
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
       </div>
@@ -86,28 +87,28 @@
           </div>
           <h1 style="color: thistle;">#Satisfaction is a rating. Loyalty is a brand.#</h1>
     </div>
-      
+
     </section>
           <script>
             var slideIndex = 1;
             showDivs(slideIndex);
-            
+
             function plusDivs(n) {
               showDivs(slideIndex += n);
             }
-            
+
             function showDivs(n) {
               var i;
               var x = document.getElementsByClassName("mySlides");
               if (n > x.length) {slideIndex = 1}
               if (n < 1) {slideIndex = x.length}
               for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
+                x[i].style.display = "none";
               }
-              x[slideIndex-1].style.display = "block";  
+              x[slideIndex-1].style.display = "block";
             }
 
-           
+
             </script>
 
 </body>
