@@ -17,3 +17,10 @@ CREATE TABLE `users` (
 insert into users values(1,'abc','aassdrefbdg','abc@gmail.com',098765,1,2,3,now());
   insert into users values(2,'abcd','aassdrefbde','abcd@gmail.com',098765,1,2,3,now())
 alter table users modify profession int(255) not null;Commit;
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+  ALTER TABLE `users`
+    MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  COMMIT;
+
+                           
